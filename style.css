@@ -38,3 +38,13 @@ a:hover {
 #player-area {
   margin-top: 32px;
 }
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+  p {
+    font-size: 0.8em;
+  }
+}
