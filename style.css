@@ -38,20 +38,24 @@ a:hover {
 #player-area {
   margin-top: 32px;
 }
-#header-laptop {
-  display: block;
-}
-#header-mobile {
-  display: none;
-}
+
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (min-width: 701px) {
+  #header-laptop {
+  display: block;
+  }
+  #header-mobile {
+  display: none;
+  }
+}
+
+@media (max-width: 700px) {
   .container {
     margin: 16px;
   }
   p {
-    font-size: 0.75em;
+    font-size: 0.6em;
   }
   #header-laptop {
   display: none;
