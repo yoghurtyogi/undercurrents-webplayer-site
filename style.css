@@ -38,13 +38,20 @@ a:hover {
 #player-area {
   margin-top: 32px;
 }
+#programme-synopsis {
+  display: block;   /* allows text-align to apply */
+  text-align: left; /* or whatever you want by default */
+}
 
 /* Responsive styles */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .container {
     margin: 16px;
   }
   p {
     font-size: 0.6em;
+  }
+  #programme-synopsis {
+    text-align: justify;
   }
 }
