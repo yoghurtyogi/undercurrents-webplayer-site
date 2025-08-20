@@ -21,6 +21,14 @@ audio {
   width: 100%;
   outline: none;
 }
+a {
+  color: #4287f5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
 #offline-message {
   font-family: Public Sans, sans-serif;
   font-size: 1em;
