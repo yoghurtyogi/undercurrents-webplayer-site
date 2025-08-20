@@ -2,19 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Internet Radio Webplayer</title>
+  <title>Undercurrents Radio Webplayer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to My Webplayer!</h1>
+    <h1>Welcome to Undercurrents!</h1>
     <p>Listen to our internet radio station live, 24/7. Enjoy the stream below!</p>
-    <div class="player">
-      <!-- Radio Stream Player -->
-      <audio controls autoplay src="https://stream.radio.co/sbe04af395/listen">
+    <div id="player-area">
+      <audio id="radio-player" controls style="width:100%;">
+        <source src="https://stream.radio.co/sbe04af395/listen" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
+      <div id="offline-message" style="display:none; color: #c00; font-weight: bold; margin-top: 10px;">
+        Undercurrents is currently offline.
+      </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

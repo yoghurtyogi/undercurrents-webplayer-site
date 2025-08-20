@@ -3,22 +3,18 @@ document.addEventListener("DOMContentLoaded", function() {
   const offlineMsg = document.getElementById('offline-message');
   const streamUrl = "https://stream.radio.co/sbe04af395/listen";
 
-  // Try to play the stream
   audio.src = streamUrl;
   audio.load();
 
-  // Try to play automatically when possible
+  // If stream is available, hide the offline message
   audio.addEventListener('canplay', function() {
-    audio.style.display = 'block';
     offlineMsg.style.display = 'none';
-    audio.play().catch(function(e) {
-      // Autoplay might fail due to browser policies
-    });
+    // Try to autoplay (may be blocked by browser)
+    audio.play().catch(function(e) {});
   });
 
-  // If there's an error, show offline message
+  // If stream isn't live, show the message
   audio.addEventListener('error', function() {
-    audio.style.display = 'none';
     offlineMsg.style.display = 'block';
   });
 });
