@@ -38,13 +38,25 @@ a:hover {
 #player-area {
   margin-top: 32px;
 }
+#header-laptop {
+  display: block;
+}
+#header-mobile {
+  display: none;
+}
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .container {
     margin: 16px;
   }
   p {
-    font-size: 0.6em;
+    font-size: 0.75em;
+  }
+  #header-laptop {
+  display: none;
+  }
+  #header-mobile {
+    display: block;
   }
 }
