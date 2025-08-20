@@ -1,26 +1,32 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f7f7f7;
+  background: grey;
   margin: 0;
   padding: 0;
 }
 .container {
   max-width: 600px;
   margin: 40px auto;
-  background: #fff;
+  background: white;
   padding: 32px;
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 h1 {
   color: #253858;
+}
+p {
+  font-family: Public Sans, sans-serif;
+  font-size: 0.9em;
 }
 audio {
   width: 100%;
   outline: none;
 }
 #offline-message {
-  font-size: 1.1em;
+  font-family: Public Sans, sans-serif;
+  font-size: 1em;
   color: #c00;
   text-align: center;
+}
+#player-area {
+  margin-top: 32px;
 }
