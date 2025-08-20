@@ -18,7 +18,12 @@ h1 {
 .player {
   margin-top: 32px;
 }
-audio, video {
+audio {
   width: 100%;
   outline: none;
+}
+#offline-message {
+  font-size: 1.2em;
+  color: #c00;
+  text-align: center;
 }
