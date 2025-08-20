@@ -40,11 +40,11 @@ a:hover {
 }
 
 /* Responsive styles */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .container {
     padding: 16px;
   }
   p {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 }
